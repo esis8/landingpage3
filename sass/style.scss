@@ -1,0 +1,86 @@
+@use "./fontweight" as fonts;
+@use "./header" as header;
+@use "./menudrop" as menu;
+@use "./mainpage" as main;
+@use "./titles" as titles;
+@use "./maincard" as card;
+@use "./cases" as cases;
+@use "./cardAssets" as client;
+@use "./cardSocial" as social;
+@use "./footer" as footer;
+
+@font-face {
+    font-family: avenir;
+    src: url(../fonts/avenirnext/AvenirNextLTPro-Regular.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: avenir;
+    src: url(../fonts/avenirnext/AvenirNextLTPro-It.otf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: avenir;
+    src: url(../fonts/avenirnext/AvenirNextLTPro-Bold.otf);
+    font-weight: 700;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: avenir;
+}
+
+:root {
+    font-family: avenir;
+}
+
+body{
+    width: 100%;
+    //background: linear-gradient(180deg, rgba(255, 255, 255, 0) 16.15%, #FEFEFE 28.45%), linear-gradient(44.76deg, #9BD9F2 52.34%, #FFD78A 117.16%);
+    //background-size: 100% 400vh;
+    //background-repeat: no-repeat;
+}
+html{
+    background-color: rgb(37, 37, 37);
+}
+body.dark{
+/* Rectangle 2207 */
+
+background: linear-gradient(209.75deg, rgba(0, 105, 55, 0.2) -2.17%, rgba(0, 0, 0, 0) 19.68%, rgba(0, 0, 0, 0) 19.68%), linear-gradient(180deg, rgba(46, 53, 71, 0) 6.39%, rgba(0, 0, 0, 0.3102) 10.29%, rgba(1, 1, 1, 0.5412) 13.69%, rgba(0, 0, 0, 0.66) 16.12%), linear-gradient(43.55deg, #344674 50.84%, rgba(0, 0, 0, 0) 105.99%);
+}
+
+
+.darkMode{
+    display: none;
+}
+
+body.dark{
+    .sunMode{
+        display: none;
+    }
+    .darkMode{
+        display: inline;
+    }
+} 
+
+@-webkit-keyframes change{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+    
+@keyframes change{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+
+
+
+
+p{
+    line-height: 1.5;
+}
